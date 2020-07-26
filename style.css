@@ -1,0 +1,165 @@
+/* font-family: 'Hind',sans-serif;
+font-family: 'Montserrat',sans-serif; */
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ line-height: 130%;
+}
+
+:root {
+    --primary-color: #ff1e21;
+    --secondary-color: #1efffc;
+    --tertiary-color: #78FF2B;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-family: 'Hind',sans-serif;
+    font-size: 16px;
+}
+/* TEMP HOMEPAGE */
+
+.home-container {
+    background: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+.home-container .home-circle {
+    height: 15rem;
+    width: 15rem;
+    border: 0.7rem double var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: animate1 12s ease-in-out; 
+    }
+
+ @keyframes animate1 {
+
+     /*these percentages are in relation to the time of 5s*/
+     20% {
+         border-color: #FC03F3;  
+     }
+
+     40% {
+         border-color: #01fef8;
+     }
+     60% {
+         border-color: #b3ff00;
+     }
+
+     80% {
+         border-color: #ff7400;
+     }
+ }
+
+.home-container .home-circle h1 {
+   color: var(--secondary-color);   
+}
+
+
+
+/* RESUME */
+
+/* 2 flex-containers */
+
+.resume-background-container {
+    background-color: #1d1d1d;
+    padding: 1rem;
+}
+
+.resume-background-container h1 {
+    color: #fff;
+    font-size: 3.75rem;
+    text-align: center;
+    }
+
+.resume-background-container h2 {
+    color: var(--primary-color);
+    font-size: 2.75rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+ .flex-container {
+     display: flex;
+     justify-content: center;
+     /* align-items: center;  */
+     /* flex-wrap: wrap; */
+     /*wrap so they STACK on smaller screens, else they just shrink by default */
+ }
+
+ .item {
+     background: #222;
+     /* border: #ccc solid 0.5px; */
+     margin: 0.7rem;
+     padding: 0.7rem;
+     color: #fff;
+ }
+
+ .item h3 {
+     color: var(--secondary-color);
+     text-align: center;
+     font-weight: bold;
+ }
+
+ .item ul {
+     margin: 0.7rem 0;
+ }
+ .item ul li {
+     font-family: 'Hind', sans-serif;
+     font-size: 16px;
+     margin-left: 1rem;
+ }
+
+ .item-1 {
+     width: 21rem;
+     /*now this doesnt shrink*/
+ }
+
+ .item-2 {
+     width: 42rem;   
+ }
+
+ p.heading {
+     color: var(--secondary-color);
+     font-weight: bold;
+     margin: 0.5rem 0;
+ }
+
+ p.date {
+     margin-bottom: 0.5rem;
+ }
+
+a.list-courses {
+     background-color: var(--tertiary-color);
+     color: #222;
+     padding: 0.4rem;
+     text-decoration: none;
+     border-radius: 5px;
+     box-shadow: 2px 2px gray;
+ }
+ .item h3 i.fas {
+    color: var(--primary-color);
+ }
+
+ span.bold {
+     font-weight: bold;
+ }
