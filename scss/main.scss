@@ -1,0 +1,111 @@
+//import variables from _config
+@import 'config';
+@import 'utilities';
+
+//General Styles
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Hind', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+// Logo
+#logo {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+// Main Nav
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        padding: 1rem 1.5rem;
+    }
+
+    a {
+        font-family: 'Hind', sans-serif;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid; //so on hover it changes color without pushing stuff down
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
+
+        &:hover {
+            border-color: $secondary-color;
+        }
+
+        //i can add a current class to the ux resume class to underline the nav
+        &.current {
+            border-color: $primary-color
+        }
+    }
+}
+
+//Header
+
+#header {
+    &-home {
+        background: $bg-image no-repeat center right / cover;
+        height: 90vh;
+        color: #fff;
+
+        .header-content {
+            text-align: center;
+            padding-top: 20%;
+
+
+            h1 {
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+
+            h2 {
+                color: pink;
+                font-size: 2rem;
+            }
+        }
+    }
+
+
+    &-inner {}
+}

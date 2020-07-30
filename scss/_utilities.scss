@@ -1,0 +1,52 @@
+.container {
+    max-width: $website-width; //this var is from _config.scss
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden; //so everthing stays in their container
+}
+
+//Buttons all share this style
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+}
+
+//more specific button classes
+.btn {
+    &-main {
+        @extend %btn-shared; //to get btn style from ^
+        color: #333;
+        background-color: $tertiary-color;
+    }
+
+    &-light {
+        @extend %btn-shared; //to get btn style from ^
+        color: #333;
+        background-color: peachpuff;
+    }
+
+    &-tertiary {
+        @extend %btn-shared; //to get btn style from ^
+        color: #333;
+        background-color: $tertiary-color;
+    }
+}
+
+//edit the hover color for all things with a class partially matching something
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+    background-color: purple;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}

@@ -1,0 +1,105 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.btn-main, .btn-light, .btn-tertiary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer; }
+
+.btn-main {
+  color: #333;
+  background-color: #78FF2B; }
+
+.btn-light {
+  color: #333;
+  background-color: peachpuff; }
+
+.btn-tertiary {
+  color: #333;
+  background-color: #78FF2B; }
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: purple; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; }
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+p {
+  font-family: 'Hind', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  text-transform: uppercase; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 1.5rem; }
+  #main-nav a {
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    #main-nav a:hover {
+      border-color: #1efffc; }
+    #main-nav a.current {
+      border-color: #ff1e21; }
+
+#header-home {
+  background: url("../images/project4.JPG") no-repeat center right/cover;
+  height: 90vh;
+  color: #fff; }
+  #header-home .header-content {
+    text-align: center;
+    padding-top: 20%; }
+    #header-home .header-content h1 {
+      font-size: 4rem;
+      line-height: 1.2; }
+    #header-home .header-content h2 {
+      color: pink;
+      font-size: 2rem; }

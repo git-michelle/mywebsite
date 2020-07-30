@@ -2,19 +2,20 @@
 font-family: 'Montserrat',sans-serif; */
 
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- line-height: 130%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 130%;
 }
 
 :root {
     --primary-color: #ff1e21;
-    --secondary-color: #1efffc;
+    --secondary-color: #12FFd9;
     --tertiary-color: #78FF2B;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -26,9 +27,10 @@ h3 {
 }
 
 p {
-    font-family: 'Hind',sans-serif;
+    font-family: 'Hind', sans-serif;
     font-size: 16px;
 }
+
 /* TEMP HOMEPAGE */
 
 .home-container {
@@ -37,7 +39,7 @@ p {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    
+
 }
 
 .home-container .home-circle {
@@ -49,30 +51,31 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    animation: animate1 12s ease-in-out; 
+    animation: animate1 12s ease-in-out;
+}
+
+@keyframes animate1 {
+
+    /*these percentages are in relation to the time of 5s*/
+    20% {
+        border-color: #FC03F3;
     }
 
- @keyframes animate1 {
+    40% {
+        border-color: #01fef8;
+    }
 
-     /*these percentages are in relation to the time of 5s*/
-     20% {
-         border-color: #FC03F3;  
-     }
+    60% {
+        border-color: #b3ff00;
+    }
 
-     40% {
-         border-color: #01fef8;
-     }
-     60% {
-         border-color: #b3ff00;
-     }
-
-     80% {
-         border-color: #ff7400;
-     }
- }
+    80% {
+        border-color: #ff7400;
+    }
+}
 
 .home-container .home-circle h1 {
-   color: var(--secondary-color);   
+    color: var(--secondary-color);
 }
 
 
@@ -82,84 +85,89 @@ p {
 /* 2 flex-containers */
 
 .resume-background-container {
-    background-color: #1d1d1d;
+    background-color: whitesmoke;
     padding: 1rem;
 }
 
 .resume-background-container h1 {
-    color: #fff;
+    color: #555;
     font-size: 3.75rem;
     text-align: center;
-    }
+}
 
 .resume-background-container h2 {
-    color: var(--primary-color);
+    color: #555;
     font-size: 2.75rem;
     text-align: center;
     padding-bottom: 1rem;
 }
- .flex-container {
-     display: flex;
-     justify-content: center;
-     /* align-items: center;  */
-     /* flex-wrap: wrap; */
-     /*wrap so they STACK on smaller screens, else they just shrink by default */
- }
 
- .item {
-     background: #222;
-     /* border: #ccc solid 0.5px; */
-     margin: 0.7rem;
-     padding: 0.7rem;
-     color: #fff;
- }
+.flex-container {
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  */
+    flex-wrap: wrap;
+    /*wrap so they STACK on smaller screens, else they just shrink by default */
+}
 
- .item h3 {
-     color: var(--secondary-color);
-     text-align: center;
-     font-weight: bold;
- }
+.item {
+    background: #fff;
+    /* border: #ccc solid 0.5px; */
+    margin: 0.7rem;
+    padding: 0.7rem;
+    color: #555;
+}
 
- .item ul {
-     margin: 0.7rem 0;
- }
- .item ul li {
-     font-family: 'Hind', sans-serif;
-     font-size: 16px;
-     margin-left: 1rem;
- }
+.item h3 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: bold;
+}
 
- .item-1 {
-     width: 21rem;
-     /*now this doesnt shrink*/
- }
+.item ul {
+    margin: 0.7rem 0;
+}
 
- .item-2 {
-     width: 42rem;   
- }
+.item ul li {
+    font-family: 'Hind', sans-serif;
+    font-size: 16px;
+    margin-left: 1rem;
+}
 
- p.heading {
-     color: var(--secondary-color);
-     font-weight: bold;
-     margin: 0.5rem 0;
- }
+.item-1 {
+    width: 21rem;
+    /*now this doesnt shrink*/
+}
 
- p.date {
-     margin-bottom: 0.5rem;
- }
+.item-2 {
+    width: 42rem;
+}
+
+p.heading {
+    color: #555;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+p.date {
+    margin-bottom: 0.5rem;
+}
 
 a.list-courses {
-     background-color: var(--tertiary-color);
-     color: #222;
-     padding: 0.4rem;
-     text-decoration: none;
-     border-radius: 5px;
-     box-shadow: 2px 2px gray;
- }
- .item h3 i.fas {
-    color: var(--primary-color);
- }
+    background-image: linear-gradient(to bottom right, var(--secondary-color), var(--tertiary-color));
+    color: #fff;
+    padding: 0.4rem;
+    text-decoration: none;
+    border-radius: 2px;
 
- span.bold {
-     font-weight: bold;
- }
+}
+
+.item h3 i.fas {
+    background: -webkit-linear-gradient(#FF5612, #E82F10, var(--primary-color), #E81080, #FD12FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+span.bold {
+    font-weight: bold;
+}
